@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <section class="allElems">
+            <div class="todo-l elem" id="0">
+                <img src="/assets/todo.jpg" alt="">
+                <h2>to-do List</h2>
+            </div>
+            <div class="daily-p elem" id="1">
+                <img src="/assets/daily-tasks.jpg" alt="">
+                <h2>Daily Planer</h2>
+            </div>
+            <div class="pomodoro-t elem" id="2">
+                <img src="/assets/timer.jpg" alt="">
+                <h2>Pomodoro Timer</h2>
+            </div>
+            <div class="motivational-q elem" id="3">
+                <img src="/assets/motivational.jpg" alt="">
+                <h2>Motivational Quotes</h2>
+            </div>
+            <div class="dialy-g elem" id="4">
+                <img src="/assets/goals.jpg" alt="">
+                <h2>Daily Goals</h2>
+            </div>
+        </section>
+
+        
+        <section class="fullElems todo-l id="0">
+            <button class="close" id="0">close</button>
+            <h1>Your Personalized Task List</h1>
+            <div class="todo-container">
+                <div class="addTask">
+                    <form>
+                        
+                        <input required id="input" type="text" placeholder="Enter Task">
+                        <textarea name="" id="" placeholder="Enter Details"></textarea>
+                        <div>
+                        <input type="checkbox" name="" id="check">
+                        <label for="check">Mark as Important!</label>
+                        </div>
+                        <button>Add Task</button>
+                    </form>
+                </div>
+                <div class="allTask"></div>
+            </div>
+        </section>
+        <section class="fullElems daily-p" id="1">
+            <button class="close" id="1">close</button>
+            <h1>daily planner</h1>
+            
+        </section>
+        <section class="fullElems pomodoro-t" id="2">
+            <button class="close" id="2">close</button>
+            <h1>pomodoro timer</h1>
+            
+        </section>
+        <section class="fullElems motivational-q" id="3">
+            <button class="close" id="3">close</button>
+            <h1>motivational quotes</h1>
+            
+        </section>
+        <section class="fullElems dialy-g" id="4">
+            <button class="close" id="4">close</button>
+            <h1>daily goals</h1>
+            
+        </section>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

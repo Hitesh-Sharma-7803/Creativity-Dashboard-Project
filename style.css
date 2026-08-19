@@ -1,0 +1,230 @@
+:root{
+    --primary:#B0E4CC;
+    --secondary:#091413;
+    --tertiary1:#408A71;
+    --tertiary2:#285A48;
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 200;
+    src: url(AeonikTRIAL-Light.otf);
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(AeonikTRIAL-Bold.otf);
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(AeonikTRIAL-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: aeonik;
+    color: var(--primary);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: var(--tertiary2);
+}
+section.allElems{
+    
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-top: 80px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+.elem{
+    
+    height: 300px;
+    border-radius: 20px;
+    width: 215px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 0.7s;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0.2);
+    cursor: pointer;
+}
+.elem:hover{
+    transform: translateY(-7px);
+    
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.elem h2{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    font-size: 20px;
+}
+.elem:active{
+    scale: 0.97;
+}
+
+.fullElems{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background-color: var(--secondary);
+    display: none;
+    position: absolute;
+    top: 0%;
+    font-size: 23px;
+}
+
+.close{
+    position: absolute;
+    right: 5%;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+.close:active{
+    scale: 0.98;
+}
+
+.todo-container{
+    
+    margin-top: 30px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-container .addTask{
+    background-color: var(--tertiary2);
+    height: 100%;
+    width: 33%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.todo-container .addTask form{
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.todo-container .addTask form div{
+    width: 100% ;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 3px;
+    font-size: 16px
+}
+.todo-container .addTask form div input{
+    scale: 1.3;
+}
+
+.todo-container .addTask form #input{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.todo-container .addTask form textarea{
+    padding: 10px 20px;
+    min-width: 100%;
+    height: 200px;
+    min-height: 50px;
+    max-height: 290px;
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.todo-container .addTask form button{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--tertiary1);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    transition: all ease 0.7s;
+}
+.todo-container .addTask form button:active{
+    scale: 0.97;
+}
+.todo-container .allTask{
+    background-color: var(--tertiary2);
+    height: 100%;
+    width: 65%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 9px;
+    overflow: auto;
+}
+
+.todo-container .allTask .task{
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task p{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+}
+.task span{
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+.task details summary{
+    color: blue;
+}
+.task details>p{
+    max-width: 420px;
+}
+.task button{
+    color: var(--primary);
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+}
